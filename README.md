@@ -66,9 +66,13 @@ to run our method (--Neumann: inverse Hession approximation (P), 'inner_loop_g' 
     python WR_SSL.py  --alg=VAT --ood_ratio=0.5 --Neumann=5 --inner_loop_g=3 --L1_trade_off=1e-08 
 
 ro tun baseline
+
     python train_baseline_ssl.py --alg=PL --ood_ratio=0.5          (for traditional SSL: VAT, PI, PL, MT)
+    
     python train_DS3L.py --alg=PL --ood_ratio=0.5	           (for robust SSL: DS3L-SSL)
+    
     python train_MWN.py --alg=PL --ood_ratio=0.5		   (for robust SSL: MWN-SSL)
+    
     python train_L2RW.py --alg=PL --ood_ratio=0.5		   (for robust SSL: L2RW-SSL)
 
 If there is no error display, then we are done for this section.
