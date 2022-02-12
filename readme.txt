@@ -1,4 +1,4 @@
-﻿----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
 Thank you for taking the time to review our code and datasets. This readme.txt describes
 how to run our proposed method and baselines methods. Before the demonstration, we first
 take a look at the structure of our code and datasets. The folder structure as following:
@@ -60,8 +60,8 @@ to generate the original dataset (save in "data/"), please try to run:
 to add OODs in unlabeled set (save in "data/mnist/"), please try to run:
     python build_ood_data.py
 
-to run our method (--hyper_m: 'meta' means meta approxiamtion, 'IFT' means meta approxiamtion):
-    python WR_SSL.py  --alg=VAT --ood_ratio=0.5 --meta_lr=0.01
+to run our method (--Neumann: inverse Hession approximation (P), 'inner_loop_g' inner loop gradients steps):
+    python WR_SSL.py  --alg=VAT --ood_ratio=0.5 --Neumann=5 --inner_loop_g=3 --L1_trade_off=1e-08 
 
 ro tun baseline
     python train_baseline_ssl.py --alg=PL --ood_ratio=0.5          (for traditional SSL: VAT, PI, PL, MT)
