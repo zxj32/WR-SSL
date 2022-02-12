@@ -1,9 +1,7 @@
 # WR-SSL
 
 ----------------------------------------------------------------------------------------
-Thank you for taking the time to review our code and datasets. This readme.txt describes
-how to run our proposed method and baselines methods. Before the demonstration, we first
-take a look at the structure of our code and datasets. The folder structure as following:
+Thank you for taking the time to review our code and datasets. This readme.txt describes how to run our proposed method and baselines methods. Before the demonstration, we first take a look at the structure of our code and datasets. The folder structure as following:
 
 	+Weighted_Robust_SSL
 	     +data
