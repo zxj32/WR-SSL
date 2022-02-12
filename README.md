@@ -33,36 +33,37 @@ take a look at the structure of our code and datasets. The folder structure as f
              weight_batch_norm.py
 	+readme.txt
 
-    1.  Weighted Robust_SSL_Framework: It contains the implementation of our methods: WR-SSL
- 			               and baseline: VAT, MT, PL, PI, L2RW-SSL, WMN-SSL, DS3L.
+    1.  Weighted Robust_SSL_Framework: It contains the implementation of our methods: WR-SSL and baseline: VAT, MT, PL, PI, L2RW-SSL, WMN-SSL, DS3L.
+    
     2.  dataset: We consider four datasets: twomoons[1], MNIST, FashionMNIST[2], CIFAR10
 
-Our code is written by Python3.6.10 We assume your Operating System is GNU/Linux-based.
-However, if you have MacOS or MacBook, it will be okay. If you use Windows, we recommend
-that you use PyCharm to run our code. The dependencies of our programs is Python3.6.10.
+Our code is written by Python3.6.10 We assume your Operating System is GNU/Linux-based. However, if you have MacOS or MacBook, it will be okay. If you use Windows, we recommend that you use PyCharm to run our code. The dependencies of our programs is Python3.6.10.
 
-Notice: Since our code depends on Python3.6.10, for people who are not familiar with
-GNU/Linux environment, it may be difficult to run our code. However, we will provide
-our pip command if the paper got accepted.
+Notice: Since our code depends on Python3.6.10, for people who are not familiar with GNU/Linux environment, it may be difficult to run our code. However, we will provide our pip command if the paper got accepted.
 
 ----------------------------------------------------------------------------------------
 This section is to tell you how to prepare the environment. It has two steps:
-    1.  install Python3.6.10
-    2.  install numpy(1.15.2), Pytorch(1.4.0), torchvision(0.5.0), tensorboardX(2.0)
-                scikit-learn(0.22.2), scipy(1.4.1).
-    (Notice: Our code is based on open-source Pytorch implementation: 
-	github.com/perrying/realistic-ssl-evaluation-pytorch)
 
-After set up above 2 steps, you are ready to run our code. For example,
-to generate the original dataset (save in "data/"), please try to run:
+    1.  install Python3.6.10
+    
+    2.  install numpy(1.15.2), Pytorch(1.4.0), torchvision(0.5.0), tensorboardX(2.0) scikit-learn(0.22.2), scipy(1.4.1).
+    
+    (Notice: Our code is based on open-source Pytorch implementation: github.com/perrying/realistic-ssl-evaluation-pytorch)
+
+After set up above 2 steps, you are ready to run our code. For example, to generate the original dataset (save in "data/"), please try to run:
+
     python build_dataset.py -d=mnist -n=100
+    
     python build_dataset.py -d=fashion_mnist -n=100
+    
     python build_dataset.py -d=cifar10 -n=4000
 
 to add OODs in unlabeled set (save in "data/mnist/"), please try to run:
+
     python build_ood_data.py
 
 to run our method (--Neumann: inverse Hession approximation (P), 'inner_loop_g' inner loop gradients steps):
+
     python WR_SSL.py  --alg=VAT --ood_ratio=0.5 --Neumann=5 --inner_loop_g=3 --L1_trade_off=1e-08 
 
 ro tun baseline
@@ -79,12 +80,12 @@ If there is no error display, then we are done for this section.
 
 ----------------------------------------------------------------------------------------
 
-Notice: Our programs are build based on GPU. it is better to test them in GPU. 
-After above steps, you should be able to reproduce our results
-reported  in our paper. If you cannot reproduce, please email: --@--.
+Notice: Our programs are build based on GPU. it is better to test them in GPU. After above steps, you should be able to reproduce our results reported  in our paper. If you cannot reproduce, please email: --@--.
 
 References:
+
 [1] https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_moons.html
+
 [2] https://github.com/zalandoresearch/fashion-mnist
 
 ----------------------------------------------------------------------------------------
