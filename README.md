@@ -1,7 +1,10 @@
 # WR-SSL
+This is a PyTorch implementation of the uncertainty-GNN model as described in our paper:
+ 
+Xujiang Zhao, Killamsetty Krishnateja, Rishabh Iyer, Feng Chen. [How Out-of-Distribution Data Hurts Semi-Supervised Learning], ICDM 2022 
 
 ----------------------------------------------------------------------------------------
-Thank you for taking the time to review our code and datasets. This readme.txt describes how to run our proposed method and baselines methods. Before the demonstration, we first take a look at the structure of our code and datasets. The folder structure as following:
+We first take a look at the structure of our code and datasets. The folder structure as following:
 
 	+Weighted_Robust_SSL
 	     +data
@@ -78,7 +81,6 @@ If there is no error display, then we are done for this section.
 
 ----------------------------------------------------------------------------------------
 
-Notice: Our programs are build based on GPU. it is better to test them in GPU. After above steps, you should be able to reproduce our results reported  in our paper. If you cannot reproduce, please email: --@--.
 
 References:
 
