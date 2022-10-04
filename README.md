@@ -32,7 +32,6 @@ We first take a look at the structure of our code and datasets. The folder struc
 	     build_ood_data.py
 	     config.py
              weight_batch_norm.py
-	+readme.txt
 
     1.  Weighted Robust_SSL_Framework: It contains the implementation of our methods: WR-SSL and baseline: VAT, MT, PL, PI, L2RW-SSL, WMN-SSL, DS3L.
     
