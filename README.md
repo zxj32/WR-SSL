@@ -1,5 +1,5 @@
 # WR-SSL
-This is a PyTorch implementation of the uncertainty-GNN model as described in our paper:
+This is a PyTorch implementation of the Weighted_Robust SSL model as described in our paper:
  
 Xujiang Zhao, Killamsetty Krishnateja, Rishabh Iyer, Feng Chen. *”How Out-of-Distribution Data Hurts Semi-Supervised Learning“*. 
 IEEE International Conference on Data Mining (ICDM 2022）.
