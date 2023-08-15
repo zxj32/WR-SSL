@@ -13,7 +13,7 @@ from collections import OrderedDict
 from tensorboardX import SummaryWriter
 from datetime import datetime
 
-from lib2.wrn_meta import LeNet_B, LeNet_B_D
+from lib2.meta_model import LeNet_B, LeNet_B_D
 from lib2 import transform
 from config import config
 from plot import plot_w
