@@ -16,7 +16,7 @@ from datetime import datetime
 from lib2.meta_model import LeNet_B, LeNet_B_D
 from lib2 import transform
 from config import config
-from plot import plot_w
+# from plot import plot_w
 import copy
 
 # seed = 123
@@ -318,7 +318,7 @@ for Q in range(5):
             for k in range(len(emd_label)):
                 w_weight = weight.data.cpu().numpy()
                 ww[k] = w_weight[emd_label[k]]
-            plot_w(ww, u_label, path + 'w_{}'.format(iteration), iteration)
+            # plot_w(ww, u_label, path + 'w_{}'.format(iteration), iteration)
             with torch.no_grad():
                 model.eval()
                 # model.update_test_stats(False)
