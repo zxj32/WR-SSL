@@ -201,7 +201,7 @@ for Q in range(5):
     writer.add_text('Text', str(args), 0)
 
     if args.ood_ratio == 0.5:
-        emd_label = np.load('output/emd/vgg19_kmean_20.npy')
+        emd_label = np.load('output/emd/vgg19_kmean_20_{}.npy'.format(args.ood_ratio))
         ood_idx = [8, 14, 18, 16, 2, 11, 4, 19, 7, 0, 12, 3, 9]
         in_idx = [5, 6, 17, 10, 1, 13, 15]
     elif args.ood_ratio == 0.75:
